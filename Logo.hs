@@ -9,10 +9,10 @@ readDistro = openFile "/etc/os-release" ReadMode >>= (\x -> hGetContents x) >>= 
 getArch :: [String]
 getArch = ["        /\\         ",
            "       /  \\        ",
-          "      /\\   \\       ",
+          "      /    \\      ",
           "     /  __  \\      ",
           "    /  (  )  \\     ",
-          "   / __|  |__\\\\    "]
+          "   /___|  |___\\    "]
 -- mapM_ ignores anything but the side effects (So in this case, it will only map putrStrl, and do only that)
 -- otherwise it would print effects/results aswell
 printArch :: IO ()
