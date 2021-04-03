@@ -4,7 +4,7 @@ import Distro
 
 main :: IO ()
 main = do
-  printArch
+  distroChoose
   putStr "Distro: "
   getDistro
   putStr "Processor"
