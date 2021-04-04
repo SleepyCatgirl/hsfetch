@@ -21,3 +21,7 @@ readPasswd = readFile "/etc/passwd" >>= (\x -> putStrLn x)
 --findHome (x:xs)
 --        | dropWhile (/= '/') x == "/home" = "home"
 --        | otherwise = findHome xs
+-- Try : Apply function to each String like [f "String", f "String2"]
+-- function:
+-- f x = head x
+-- then f (head x)
