@@ -15,6 +15,6 @@ main = do
   processorFunc
   putStr "Memory: "
   memoryUsedPrint
-  putStr "/"
+  putStr "MB/"
   memoryTotalPrint
-  putStrLn ""
+  putStrLn "MB"
